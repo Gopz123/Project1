@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:id="@+id/layout1"
     android:background="@drawable/gamepage_background">
-
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,12 +17,11 @@
         <NumberPicker
             android:id="@+id/numbers1"
             android:layout_width="83dp"
-            android:layout_height="210dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bull_background_logo"
-            android:scrollbarSize="50dp"
+            android:background="@drawable/picker4"
             android:clickable="false"
+            android:scrollbarSize="50dp"
             android:theme="@style/NumberPickerTheme" />
 
         <NumberPicker
@@ -30,8 +29,7 @@
             android:layout_width="83dp"
             android:layout_height="210dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bull_background_logo"
+            android:background="@drawable/picker4"
             android:scrollbarSize="50dp"
             android:theme="@style/NumberPickerTheme" />
 
@@ -40,28 +38,25 @@
             android:layout_width="83dp"
             android:layout_height="210dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bull_background_logo"
+            android:background="@drawable/picker4"
             android:scrollbarSize="50dp"
-            android:theme="@style/NumberPickerTheme" />
+            android:theme="@style/NumberPickerTheme"/>
         <NumberPicker
             android:id="@+id/numbers4"
             android:layout_width="83dp"
             android:layout_height="210dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bull_background_logo"
+            android:background="@drawable/picker4"
             android:scrollbarSize="50dp"
-            android:theme="@style/NumberPickerTheme" />
+            android:theme="@style/NumberPickerTheme"/>
         <NumberPicker
             android:id="@+id/numbers5"
             android:layout_width="83dp"
             android:layout_height="210dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bull_background_logo"
+            android:background="@drawable/picker4"
             android:scrollbarSize="50dp"
-            android:theme="@style/NumberPickerTheme" />
+            android:theme="@style/NumberPickerTheme"/>
     </LinearLayout>
 
     <ImageButton
@@ -69,22 +64,41 @@
         android:layout_width="136dp"
         android:layout_height="141dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:background="@drawable/custom_button"/>
-    <ScrollView
-        android:id="@+id/scrlv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
-    <TextView
+
+    <ListView
         android:id="@+id/testingtext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="365dp"
+        android:layout_height="262dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="50dp"/>
+        android:textSize="50dp"
+        android:layout_margin="25dp"
+        android:scrollbarStyle="insideInset"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="Refresh"/>
+
+        <Button
+            android:id="@+id/giveup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Give up"/>
+
+
+    </LinearLayout>
 
 </LinearLayout>
