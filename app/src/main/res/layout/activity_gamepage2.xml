@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".gamepage_2"
+    android:background="@drawable/gamepage_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="117dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="*The game is based on prediction of a 5 digit number which is created randomly by game."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+
+        android:text="*You have infinite number of trails to find it."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="*Win occurs when you correctly predict the random number using trail method.(5 Bulls)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+
+        android:text="*Number of Bulls  indicate the trail number and random number has some common digits in the same position."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+
+        android:text="*Number of Cows indicate the trail number and random number has some common digits at any position."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+
+        android:text="*Each digit of the trail number must be unique in that number."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="*Refresh button can be used restart the game."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+
+        android:text="*Give up can be used to surrender yourself to game."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+</LinearLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bullcow">
+    package="com.Go.bullcow">
 
     <application
         android:allowBackup="true"
@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BullCow">
-        <activity android:name=".gamePage"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.Go.bullcow.gamepage_2"></activity>
+        <activity android:name="com.Go.bullcow.gamePage" />
+        <activity android:name="com.Go.bullcow.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
