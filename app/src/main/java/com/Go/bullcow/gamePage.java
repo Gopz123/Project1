@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -28,6 +30,9 @@ public class gamePage extends AppCompatActivity {
 
 
 
+
+
+
     int n1,n2,n3,n4,n5,i,j,k,l,m,n;
     int[] guess = new int[5];
     int[] random = new int[5];
@@ -44,6 +49,17 @@ public class gamePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+        Configuration configuration = getResources().getConfiguration();
+        configuration.fontScale = (float) 1; //0.85 small size, 1 normal size, 1,15 big etc
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        configuration.densityDpi = (int) getResources().getDisplayMetrics().xdpi;
+        getBaseContext().getResources().updateConfiguration(configuration, metrics);
+
+
+
 
 
 
@@ -227,7 +243,7 @@ public class gamePage extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         ImageView img=dialog.findViewById(R.id.bullimage);
         TextView downtext=dialog.findViewById(R.id.downtext);
-        downtext.setText(clickcount+" chances");
+        downtext.setText("Trials:"+clickcount);
         img.setAnimation(fade);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -250,8 +266,16 @@ public class gamePage extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_lose);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         ImageView img=dialog.findViewById(R.id.lose_bull);
-        TextView downtext=dialog.findViewById(R.id.lose_text);
-        downtext.setText(" "+random[0]+"     "+random[1]+"    "+random[2]+"     "+random[3]+"    "+random[4]);
+        TextView downtext1=dialog.findViewById(R.id.lose_text1);
+        TextView downtext2=dialog.findViewById(R.id.lose_text2);
+        TextView downtext3=dialog.findViewById(R.id.lose_text3);
+        TextView downtext4=dialog.findViewById(R.id.lose_text4);
+        TextView downtext5=dialog.findViewById(R.id.lose_text5);
+        downtext1.setText(random[0]+"");
+        downtext2.setText(random[1]+"");
+        downtext3.setText(random[2]+"");
+        downtext4.setText(random[3]+"");
+        downtext5.setText(random[4]+"");
         img.setAnimation(fade);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
